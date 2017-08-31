@@ -125,20 +125,19 @@ $(function () {
             //Run the load feed function and check what links are currently present
             loadFeed(0, function () {
                 oldFeed = $('.entry-link').text();
-                return oldFeed
                 done();
+                return oldFeed;
             });
-        })
+        });
 
         it('Load new content when the content is changed', function (done) {
             //Run the load feed function again and check which links are now present
             loadFeed(1, function () {
                 newFeed = $('.entry-link').text();
-                return newFeed
-
                 expect(oldFeed).not.toEqual(oldFeed);
 
-            })
+
+            });
         });
 
 
