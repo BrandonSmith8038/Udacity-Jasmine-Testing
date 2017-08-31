@@ -44,9 +44,7 @@ $(function () {
     describe("Initial Entries", function () {
 
         beforeEach(function (done) {
-            loadFeed(0, function () {
-                done();
-            });
+            loadFeed(0, done); 
         });
 
         it('Feed container is not empty after load feed is finished running', function (done) {
