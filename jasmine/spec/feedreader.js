@@ -71,7 +71,7 @@ $(function () {
             //Run the load feed function again and check which links are now present
             loadFeed(1, function () {
                 newFeed = $('.entry-link').text();
-                expect(oldFeed).not.toEqual(oldFeed);
+                expect(oldFeed).not.toEqual(newFeed);
             });
         });
     });
