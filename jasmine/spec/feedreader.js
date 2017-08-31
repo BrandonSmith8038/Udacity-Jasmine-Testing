@@ -48,7 +48,7 @@ $(function () {
         });
 
         it('Feed container is not empty after load feed is finished running', function (done) {
-            expect($('.entry').length).toBeGreaterThan(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
 
