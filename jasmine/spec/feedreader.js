@@ -64,7 +64,6 @@ $(function () {
             loadFeed(0, function () {
                 oldFeed = $('.entry-link').text();
                 done();
-                return oldFeed;
             });
         });
 
